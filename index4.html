@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的網頁標題</title>
+  <meta name="description" content="這是頁面的簡短描述，用於 SEO 與分享摘要。">
+  <!-- Open Graph / 社群分享（可選） -->
+  <meta property="og:title" content="我的網頁標題">
+  <meta property="og:description" content="這是頁面的簡短描述。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <!-- 網站圖示（可選） -->
+  <!-- <link rel="icon" href="/favicon.ico"> -->
+  <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+  <!-- 頁首區域 -->
+  <header role="banner">
+    <div class="container">
+      <nav aria-label="主要導覽">
+        <a href="#">首頁</a>
+        <a href="#features">特色</a>
+        <a href="#contact">聯絡我們</a>
+      </nav>
+      <h1>歡迎！這是簡單的 HTML 範本</h1>
+      <h2>GIT測試使用</h2>
+      <h3>複習再做一次</h3>
+      <h4>只放在測試機上的測試</43>
+      <p class="lead">快速開始一個乾淨、可擴充的靜態頁面。</p>
+    </div>
+  </header>
+
+  <!-- 主要內容 -->
+  <main id="content" role="main">
+    <div class="container">
+      <section class="card" id="features">
+        <h2>特色</h2>
+        <ul>
+          <li>語意化結構（header/main/footer/section）</li>
+          <li>RWD 響應式設定（meta viewport + 流體排版）</li>
+          <li>基礎 SEO 與 OG meta</li>
+        </ul>
+        <button class="btn" id="helloBtn" type="button">點我試試</button>
+      </section>
+    </div>
+  </main>
+
+  <!-- 頁尾區域 -->
+  <footer role="contentinfo">
+    <div class="container">
+      <small>© <span id="year"></span> My Site. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    // 小小互動：按鈕與年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('helloBtn').addEventListener('click', function(){
+      alert('Hello, world!');
+    });
+  </script>
+</body>
+</html>
